@@ -28,9 +28,12 @@
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
+
+
+  
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm install --legacy-peer-deps && npm install --legacy-peer-deps",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

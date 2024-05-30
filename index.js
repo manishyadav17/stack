@@ -138,7 +138,7 @@ if(process.env.NODE_ENV === 'production'){
 
 
 /* MONGOOSE SETUP */
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 6001;
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
@@ -148,9 +148,9 @@ mongoose
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
 
-    if (process.env.NODE_ENV = "production"){
-      index.use(express.static("client/build"));
-    }
+    // if (process.env.NODE_ENV = "production"){
+    //   index.use(express.static("client/build"));
+    // }
 
 
 
